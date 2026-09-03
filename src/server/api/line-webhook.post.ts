@@ -1,7 +1,7 @@
 export default defineEventHandler(async (event) => {
   const body = await readBody(event);
   const config = useRuntimeConfig();
-  const accessToken = config.lineChannelAccessToken;
+  const accessToken = config.lineAccessToken;
 
   // microCMSのWebhookイベントが「公開（PUBLISH）」または「更新」のときだけ処理する
   if (body.type === "PUBLISH" || body.type === "UPDATE") {
