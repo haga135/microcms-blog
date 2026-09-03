@@ -1,5 +1,5 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-const { API_KEY, SERVICE_DOMAIN, LINE_CHANNEL_ACCESS_TOKEN } = process.env;
+const { API_KEY, SERVICE_DOMAIN, LINE_ACCESS_TOKEN } = process.env;
 
 export default defineNuxtConfig({
   srcDir: "src/",
@@ -17,7 +17,7 @@ export default defineNuxtConfig({
   runtimeConfig: {
     apiKey: API_KEY,
     serviceDomain: SERVICE_DOMAIN,
-    lineChannelAccessToken: LINE_CHANNEL_ACCESS_TOKEN,
+    lineAccessToken: LINE_ACCESS_TOKEN,
   },
   css: ["~/assets/css/reset.css", "~/assets/css/style.css"],
 });
