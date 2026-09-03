@@ -9,7 +9,7 @@ export default defineEventHandler(async (event) => {
     const title = content?.title || "新しい記事";
     const slug = content?.id || "";
     // ブログの記事詳細ページへのリンク（ご自身のドメインに合わせて変更してください）
-    const articleUrl = `https://https://main.d29tvknk7nd8pe.amplifyapp.com//posts/${slug}`;
+    const articleUrl = `https://main.d29tvknk7nd8pe.amplifyapp.com//posts/${slug}`;
 
     // LINEに送るメッセージの組み立て
     const messageText = `ブログに新しい記事が公開されました！\n\n「${title}」\n\n▼詳細はこちら\n${articleUrl}`;
