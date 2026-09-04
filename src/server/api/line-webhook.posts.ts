@@ -19,7 +19,7 @@ export default defineEventHandler(async (event) => {
       await $fetch("https://api.line.me/v2/bot/message/broadcast", {
         method: "POST",
         headers: {
-          Authorization: `Bearer ${accessToken}`,
+          Authorization: `Bearer ` + accessToken,
           "Content-Type": "application/json",
         },
         body: {
