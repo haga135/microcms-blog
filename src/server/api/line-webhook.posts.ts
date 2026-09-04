@@ -21,7 +21,6 @@ export default defineEventHandler(async (event) => {
         headers: {
           Authorization: `Bearer ${accessToken}`,
           "Content-Type": "application/json",
-          '{ "to": "<U5b460be87a7fb7e81672ceec99dfb94b>", "messages": [{ "type": "text", "text": "Hello, world" }] }',
         },
         body: {
           messages: [
